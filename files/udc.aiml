@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+      <pattern>Ciao edu io sono *</pattern>
+      <template>
+         Ciao <star/>, qual è il tuo percorso di studi?
+      </template>
+   </category>
+    <category>
+      <pattern>io studio  *</pattern>
+      <template>
+         Meraviglioso , posso fornirti diversi strumenti utili all apprendimento utili nella facoltà <star/>
+        
+      </template>
+   </category>
+   
+   <category>
+      <pattern>A * is a *</pattern>
+      <template>
+         How <star index = "1"/> can not be a <star index = "2"/>?
+      </template>
+   </category>
+   
+</aiml>
