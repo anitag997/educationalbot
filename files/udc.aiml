@@ -6,13 +6,25 @@
          Ciao <star/>, qual è il tuo percorso di studi?
       </template>
    </category>
+
+<category><pattern>ciao io sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
+<category><pattern>hey sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
+<category><pattern>ciao sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
+
+
     <category>
       <pattern>io studio  *</pattern>
       <template>
-         Meraviglioso , posso fornirti diversi strumenti utili all apprendimento utili nella facoltà <star/>
+         Meraviglioso , posso fornirti diversi strumenti utili all apprendimento nella facoltà <star/>
         
       </template>
    </category>
+
+<category><pattern>studio *</pattern><template><srai>IO STUDIO  <star/></srai></template></category>
+<category><pattern>sto studiando * </pattern><template><srai>IO STUDIO  <star/></srai></template></category>
+<category><pattern>vorrei studiare * </pattern><template><srai>IO STUDIO  <star/></srai></template></category>
+
+
    
    <category>
       <pattern>A * is a *</pattern>
@@ -21,4 +33,8 @@
       </template>
    </category>
    
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
 </aiml>
