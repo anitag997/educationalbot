@@ -3,7 +3,7 @@
      <category>
       <pattern>Ciao edu io sono *</pattern>
       <template>
-         Ciao  <set name = "username"> <star/>! </set>, qual è il tuo percorso di studi?
+         Ciao  <set name = "username"> <star/>! </set>,in cosa posso esserti utile?
       </template>
    </category>
 
@@ -11,20 +11,150 @@
 <category><pattern>hey sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
 <category><pattern>ciao sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
 
-
-    <category>
-      <pattern>io studio  *</pattern>
-      <template>
-         Meraviglioso , posso fornirti diversi strumenti utili all apprendimento nella facoltà <star/>
-        
-      </template>
+ <category>
+      <pattern>Parliamo di algoritmi </pattern>
+      <template>Per algoritmo si intende una successione di istruzioni o passi che 
+         definiscono le operazioni da eseguire sui dati per ottenere i risultati. 
+         Lo schema esecutivo di un algoritmo specifica che i passi devono essere eseguiti in sequenza,
+         salvo diversa indicazione.Esistono diversi algoritmi oggetto di studio,chiedi pure altre informazioni <set name = "algorirmo">algoritmo</set></template>  
    </category>
 
-<category><pattern>studio *</pattern><template><srai>IO STUDIO  <star/></srai></template></category>
-<category><pattern>sto studiando * </pattern><template><srai>IO STUDIO  <star/></srai></template></category>
-<category><pattern>vorrei studiare * </pattern><template><srai>IO STUDIO  <star/></srai></template></category>
+<category><pattern>Che cos è un algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
+<category><pattern>algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
+<category><pattern>algoritmi </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
+<category><pattern>spiegami cos è un algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
 
+   
+   
+       
+  
+      <category>
+         <pattern> Che cos'è bubble sort ? </pattern>
+         <template>bubble sort è un semplice algoritmo di ordinamento di liste di dati.
+         In esso l'insieme di dati viene scansionato,
+         ogni coppia di elementi adiacenti viene comparata ed i due elementi vengono 
+         invertiti di posizione se sono nell'ordine sbagliato. L'algoritmo continua nuovamente
+         a ri-eseguire questi passaggi su tutta la lista fino a quando non vengono più eseguiti scambi, 
+         situazione che indica che la lista è ordinata.</template>
+      </category>
 
+<category><pattern>bubble sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
+<category><pattern>parlami di bubbole sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
+
+<category><pattern>Bubble sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
+
+        
+     
+   <category>
+      <pattern>Quick sort </pattern>
+      <template>
+        Quicksort è un algoritmo di ordinamento ricorsivo in place non stabile. 
+        Tale procedura ricorsiva viene comunemente detta partition: preso un elemento chiamato "pivot" 
+        da una struttura dati (es. array) si pongono gli elementi minori a sinistra rispetto al pivot
+        e gli elementi maggiori a destra. L'operazione viene quindi reiterata sui due insiemi risultanti 
+        fino al completo ordinamento della struttura.
+        Il Quicksort, termine che tradotto letteralmente in italiano indica ordinamento rapido, è
+        l'algoritmo di ordinamento che ha, nel caso medio, prestazioni migliori tra quelli basati su confronto. 
+        È stato ideato da Charles Antony Richard Hoare nel 1961.
+      </template>
+   </category>
+<category>
+      <pattern>Merge Sort</pattern>
+      <template>
+         Il merge sort è un algoritmo di ordinamento basato su confronti che utilizza un processo di
+         risoluzione ricorsivo, sfruttando la tecnica del Divide et Impera, che consiste nella suddivisione
+         del problema in sottoproblemi della stessa natura di dimensione via via più piccola. 
+         Fu inventato da John von Neumann nel 1945. Una descrizione dettagliata e
+         un'analisi della versione bottom-up dell'algoritmo apparve in un articolo di Goldstine e 
+         Neumann già nel 1948.
+      </template>
+   </category>
+   <category>
+       <pattern>Selection sort</pattern>
+       <template>
+           L'ordinamento per selezione (selection sort) è un algoritmo di ordinamento che opera in place
+           ed in modo simile all'ordinamento per inserzione. L'algoritmo è di tipo non adattivo, 
+           ossia il suo tempo di esecuzione non dipende dall'input ma dalla dimensione dell'array.
+           L'algoritmo seleziona di volta in volta il numero minore nella sequenza di partenza e lo sposta
+           nella sequenza ordinata; di fatto la sequenza viene suddivisa in due parti:
+           la sottosequenza ordinata, che occupa le prime posizioni dell'array, e 
+           la sottosequenza da ordinare, che costituisce la parte restante dell'array.
+       </template>
+ </category>
+   
+   
+   <cateogory>
+       <pattern>Insertion Sort</pattern>
+       <template>'Insertion sort, in italiano ordinamento a inserimento,
+       è un algoritmo relativamente semplice per ordinare un array. Non è molto diverso dal modo in cui 
+       un essere umano, spesso, ordina un mazzo di carte. Esso è un algoritmo in place, 
+       cioè ordina l'array senza doverne creare una copia, risparmiando memoria. 
+       Pur essendo molto meno efficiente di algoritmi più avanzati, può avere alcuni vantaggi:
+       ad esempio, è semplice da implementare ed è efficiente per insiemi di partenza che sono quasi 
+       ordinati.</template>
+   </cateogory>
+   
+   
+   
+  <category>
+      <pattern>Linguaggi di programmazione  </pattern>
+      
+      <template>
+         <think><set name = "linguaggi"> java</set></think>
+         <condition name = "linguaggi" value = "java">
+            n informatica Java è un linguaggio di programmazione ad alto livello, 
+            orientato agli oggetti e a tipizzazione statica, che si appoggia sull'omonima 
+            piattaforma software di esecuzione, specificamente progettato per essere il più possibile
+            indipendente dalla piattaforma hardware di esecuzione 
+            (tramite compilazione in bytecode prima e interpretazione poi da parte di una JVM)
+            (sebbene questa caratteristica comporti prestazioni in termini di computazione inferiori
+            a quelle di linguaggi direttamente compilati come C e C++ ovvero dunque perfettamente adattati 
+            alla piattaforma hardware).
+         </condition>
+         
+         <condition name = "linguaggi" value = "C ">
+             C è un linguaggio di programmazione imperativo di natura procedurale; 
+            i programmi scritti in questo linguaggio sono composti da espressioni matematiche 
+            e da istruzioni imperative raggruppate in procedure parametrizzate in grado di manipolare 
+            vari tipi di dati.
+            Integra caratteristiche dei linguaggi di basso livello,
+            ovvero caratteri, numeri e indirizzi, che possono essere indicati tramite gli operatori
+            aritmetici e logici di cui si servono le macchine reali.
+            Il C è stato concepito per essere snello e performante,
+            si avvale peraltro di numerose librerie per far fronte ad ogni tipo di esigenza,
+            in particolare la libreria standard del C. 
+            Tali librerie, sotto forma di file di intestazione o file con suffisso -h, 
+            possono essere caricate mediante la direttiva #include del preprocessore
+         </condition>
+         
+         
+         <condition name = "linguaggi" value ="javaScript">
+             JavaScript è un linguaggio di programmazione multi paradigma orientato agli eventi,
+             utilizzato sia nella programmazione lato client web che lato server (NodeJs)
+             per la creazione di rest API, applicazioni desktop e embedded, 
+             siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script
+             invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso
+             (mouse, tastiera, caricamento della pagina ecc...)è stato formalizzato con una sintassi più
+             vicina a quella del linguaggio Java di Sun Microsystems
+             (che nel 2010 è stata acquistata da Oracle). 
+         </condition>
+         
+         <condition name = "linguaggi" value ="html">
+             l'HyperText Markup Language, comunemente noto con l'acronimo HTML, 
+             è un linguaggio di markup. Nato per la formattazione e impaginazione di documenti
+             ipertestuali disponibili nel web 1.0, oggi è utilizzato principalmente per il 
+             disaccoppiamento della struttura logica di una pagina web (definita appunto dal markup)
+             e la sua rappresentazione, gestita tramite gli stili CSS per adattarsi alle nuove esigenze 
+             di comunicazione e pubblicazione all'interno di Internet, la sintassi è stabilita dal 
+             World Wide Web Consortium (W3C). È derivato dall'SGML, un metalinguaggio finalizzato alla 
+             definizione di linguaggi utilizzabili per la stesura di documenti destinati 
+             alla trasmissione in formato elettronico. La versione attuale, la quinta, è stata rilasciata 
+             dal W3C nell'ottobre 2014.
+         </condition>
+      </template>
+      
+   </category>
+   
    
    <category>
       <pattern>A * is a *</pattern>
@@ -32,6 +162,12 @@
          How <star index = "1"/> can not be a <star index = "2"/>?
       </template>
    </category>
+   
+   
+   
+   
+   
+   
    <category>
       <pattern>HI</pattern>
       
@@ -53,6 +189,12 @@
     <template>
       Ciao <get name = "username"/> Spero di esserti stato utile, A presto!
     </template>  
- </category>  
+ </category>
+
+<category><pattern>Arrivederci </pattern><template><srai>BYE</srai></template></category>
+<category><pattern>ciao </pattern><template><srai>BYE</srai></template></category>
+<category><pattern>A presto </pattern><template><srai>BYE</srai></template></category>
+<category><pattern>a presto </pattern><template><srai>BYE</srai></template></category>
+  
  
 </aiml>
