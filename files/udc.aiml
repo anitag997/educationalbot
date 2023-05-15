@@ -12,24 +12,24 @@
 <category><pattern>ciao sono * </pattern><template><srai>CIAO EDU IO SONO <star/></srai></template></category>
 
  <category>
-      <pattern>Parliamo di algoritmi </pattern>
+      <pattern>parlami di algoritmi </pattern>
       <template>Per algoritmo si intende una successione di istruzioni o passi che 
          definiscono le operazioni da eseguire sui dati per ottenere i risultati. 
          Lo schema esecutivo di un algoritmo specifica che i passi devono essere eseguiti in sequenza,
          salvo diversa indicazione.Esistono diversi algoritmi oggetto di studio,chiedi pure altre informazioni <set name = "algorirmo">algoritmo</set></template>  
    </category>
 
-<category><pattern>Che cos è un algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
-<category><pattern>algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
-<category><pattern>algoritmi </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
-<category><pattern>spiegami cos è un algoritmo </pattern><template><srai>PARLIAMO DI ALGORITMI </srai></template></category>
+<category><pattern>algoritmo </pattern><template><srai>parlami di algoritmi </srai></template></category>
+<category><pattern>cosa significa algoritmo </pattern><template><srai>parlami di algoritmi </srai></template></category>
+<category><pattern>algoritmi </pattern><template><srai>parlami di algoritmi </srai></template></category>
+<category><pattern>cos è un algoritmo </pattern><template><srai>parlami di algoritmi </srai></template></category>
 
    
    
        
   
       <category>
-         <pattern> Che cos'è bubble sort ? </pattern>
+         <pattern>parlami di bubble sort</pattern>
          <template>bubble sort è un semplice algoritmo di ordinamento di liste di dati.
          In esso l'insieme di dati viene scansionato,
          ogni coppia di elementi adiacenti viene comparata ed i due elementi vengono 
@@ -38,10 +38,9 @@
          situazione che indica che la lista è ordinata.</template>
       </category>
 
-<category><pattern>bubble sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
-<category><pattern>parlami di bubbole sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
+<category><pattern>bubble sort </pattern><template><srai>parlami di bubble sort</srai></template></category>
 
-<category><pattern>Bubble sort </pattern><template><srai> CHE COS'È BUBBLE SORT ? </srai></template></category>
+<category><pattern>Bubble sort </pattern><template><srai>parlami di bubble sort</srai></template></category>
 
         
      
@@ -58,6 +57,12 @@
         È stato ideato da Charles Antony Richard Hoare nel 1961.
       </template>
    </category>
+
+<category><pattern>algoritmo quick sort </pattern><template><srai>QUICK SORT </srai></template></category>
+<category><pattern>quick sort </pattern><template><srai>QUICK SORT </srai></template></category>
+<category><pattern>quicksort </pattern><template><srai>QUICK SORT </srai></template></category>
+<category><pattern>che cos è quick sort </pattern><template><srai>QUICK SORT </srai></template></category>
+
 <category>
       <pattern>Merge Sort</pattern>
       <template>
@@ -69,6 +74,13 @@
          Neumann già nel 1948.
       </template>
    </category>
+
+<category><pattern>merge sort </pattern><template><srai>MERGE SORT</srai></template></category>
+<category><pattern>che cos è merge sort </pattern><template><srai>MERGE SORT</srai></template></category>
+
+<category><pattern>algoritmo merge sort </pattern><template><srai>MERGE SORT</srai></template></category>
+<category><pattern>parlami di merge sort</pattern><template><srai>MERGE SORT</srai></template></category>
+
    <category>
        <pattern>Selection sort</pattern>
        <template>
@@ -81,6 +93,12 @@
            la sottosequenza da ordinare, che costituisce la parte restante dell'array.
        </template>
  </category>
+
+<category><pattern>parlami di selection sort </pattern><template><srai>SELECTION SORT</srai></template></category>
+<category><pattern>selection sort </pattern><template><srai>SELECTION SORT</srai></template></category>
+<category><pattern>che cos è selection sort </pattern><template><srai>SELECTION SORT</srai></template></category>
+<category><pattern>che algoritmo è selection sort </pattern><template><srai>SELECTION SORT</srai></template></category>
+
    
    
    <cateogory>
@@ -96,23 +114,32 @@
    
    
    
-  <category>
-      <pattern>Linguaggi di programmazione  </pattern>
-      
-      <template>
-         <think><set name = "linguaggi"> java</set></think>
-         <condition name = "linguaggi" value = "java">
-            n informatica Java è un linguaggio di programmazione ad alto livello, 
+  
+     
+     
+     
+      <category>
+          <pattern>programmazione in java</pattern>
+           <template> In informatica Java è un linguaggio di programmazione ad alto livello, 
             orientato agli oggetti e a tipizzazione statica, che si appoggia sull'omonima 
             piattaforma software di esecuzione, specificamente progettato per essere il più possibile
             indipendente dalla piattaforma hardware di esecuzione 
             (tramite compilazione in bytecode prima e interpretazione poi da parte di una JVM)
             (sebbene questa caratteristica comporti prestazioni in termini di computazione inferiori
             a quelle di linguaggi direttamente compilati come C e C++ ovvero dunque perfettamente adattati 
-            alla piattaforma hardware).
-         </condition>
-         
-         <condition name = "linguaggi" value = "C ">
+            alla piattaforma hardware).</template>
+       </category>
+
+<category><pattern>parlami di java </pattern><template><srai>programmazione in java</srai></template></category>
+<category><pattern>linguaggio java </pattern><template><srai>programmazione in java</srai></template></category>
+<category><pattern>linguaggio di programmazione java </pattern><template><srai>programmazione in java</srai></template></category>
+<category><pattern>java </pattern><template><srai>programmazione in java</srai></template></category>
+<category><pattern>Java </pattern><template><srai>programmazione in java</srai></template></category>
+
+       
+           <category>
+           <pattern> che cos'è C?</pattern>
+            <template>
              C è un linguaggio di programmazione imperativo di natura procedurale; 
             i programmi scritti in questo linguaggio sono composti da espressioni matematiche 
             e da istruzioni imperative raggruppate in procedure parametrizzate in grado di manipolare 
@@ -125,10 +152,20 @@
             in particolare la libreria standard del C. 
             Tali librerie, sotto forma di file di intestazione o file con suffisso -h, 
             possono essere caricate mediante la direttiva #include del preprocessore
-         </condition>
+        </template>
+          </category>
+
+<category><pattern>C </pattern><template><srai> CHE COS'È C?</srai></template></category>
+<category><pattern>linguaggio c </pattern><template><srai> CHE COS'È C?</srai></template></category>
+<category><pattern>Linguaggio C</pattern><template><srai> CHE COS'È C?</srai></template></category>
+<category><pattern>Parlami di c </pattern><template><srai> CHE COS'È C?</srai></template></category>
+<category><pattern>Parlami del linguaggio di programmazione C</pattern><template><srai> CHE COS'È C?</srai></template></category>
+
          
          
-         <condition name = "linguaggi" value ="javaScript">
+         <category>
+      <pattern>   che cos è java script</pattern>
+       <template>
              JavaScript è un linguaggio di programmazione multi paradigma orientato agli eventi,
              utilizzato sia nella programmazione lato client web che lato server (NodeJs)
              per la creazione di rest API, applicazioni desktop e embedded, 
@@ -137,9 +174,22 @@
              (mouse, tastiera, caricamento della pagina ecc...)è stato formalizzato con una sintassi più
              vicina a quella del linguaggio Java di Sun Microsystems
              (che nel 2010 è stata acquistata da Oracle). 
-         </condition>
-         
-         <condition name = "linguaggi" value ="html">
+         </template>
+              </category>
+
+<category><pattern>javascript </pattern><template><srai>   che cos è java script</srai></template></category>
+<category><pattern>java script </pattern><template><srai>   che cos è java script</srai></template></category>
+<category><pattern>Parlami di javascript </pattern><template><srai>   che cos è java script</srai></template></category>
+
+<category><pattern>js </pattern><template><srai>   che cos è java script</srai></template></category>
+<category><pattern>parlami di js </pattern><template><srai>   che cos è java script</srai></template></category>
+
+              
+              
+              
+ <category>
+          <pattern>  html </pattern>
+           <template>
              l'HyperText Markup Language, comunemente noto con l'acronimo HTML, 
              è un linguaggio di markup. Nato per la formattazione e impaginazione di documenti
              ipertestuali disponibili nel web 1.0, oggi è utilizzato principalmente per il 
@@ -150,10 +200,14 @@
              definizione di linguaggi utilizzabili per la stesura di documenti destinati 
              alla trasmissione in formato elettronico. La versione attuale, la quinta, è stata rilasciata 
              dal W3C nell'ottobre 2014.
-         </condition>
       </template>
-      
    </category>
+
+<category><pattern>che cos è html </pattern><template><srai>  HTML </srai></template></category>
+<category><pattern>parlami di html </pattern><template><srai>  HTML </srai></template></category>
+<category><pattern>linguaggio html </pattern><template><srai>  HTML </srai></template></category>
+<category><pattern>html </pattern><template><srai>  HTML </srai></template></category>
+
    
    
    <category>
@@ -179,11 +233,6 @@
       </template>
       </category>
 
-<category>
-    <pattern></pattern>
-    <template></template>
-</category>
-
  <category>
     <pattern>Bye</pattern>
     <template>
@@ -197,4 +246,8 @@
 <category><pattern>a presto </pattern><template><srai>BYE</srai></template></category>
   
  
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
 </aiml>
